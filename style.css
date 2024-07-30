@@ -29,6 +29,25 @@ body {
 
 #section1{
     height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 425px) {
+    #section1 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    #section1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    #section1 {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 nav {
@@ -363,4 +382,3 @@ margin: 120px 0px 0px 0px;
     font-size: 17px;
     font-weight: 600;
 }
-/* apartir de agora, nao volte mais
